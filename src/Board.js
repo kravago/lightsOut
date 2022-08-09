@@ -89,7 +89,7 @@ function Board({ nrows=3, ncols=3, chanceLightStartsOn=0.25 }) {
       />)
       htmlRow.push(cell);
     }
-    htmlBoard.push(htmlRow);
+    htmlBoard.push((<tr key={r}>{htmlRow}</tr>))
   }
 
   return (
